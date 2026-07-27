@@ -1,9 +1,7 @@
 import imagica from './imagica.png'
-import fingenius from './fingenius.png'
-import portfolio from './portfolio.png'
+import jit from './jit.png'
 
 export const projects = {
     imagica,
-    fingenius,
-    portfolio
+    jit
 }

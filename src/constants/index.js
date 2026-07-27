@@ -5,6 +5,55 @@ import { socials } from '../assets/socials/socials';
 export const myProjects = [
   {
     id: 1,
+    title: "Just-In-Time Software Bug Prediction",
+    description:
+      "A machine learning system that predicts whether a GitHub pull request is likely to introduce a defect \u2014 at the exact moment someone is deciding whether to merge it. Trained on the ApacheJIT benchmark of 106,674 commits across 14 Apache projects, it reads a pull request's real diff and returns a risk level, a bug probability, and an explainable merge recommendation.",
+    subDescription: [
+      "Trained and benchmarked Logistic Regression, Random Forest, and XGBoost on the ApacheJIT dataset, deploying XGBoost at 72.16% accuracy and 0.803 ROC-AUC.",
+      "Engineered a leakage-safe, time-aware chronological train/test split with SMOTE oversampling to correct a 26% class imbalance across 12 change-level software metrics.",
+      "Computed live features (lines added/deleted, files, directories, subsystems, change entropy) directly from each pull request's diff via the GitHub REST API.",
+      "Integrated SHAP for global and per-prediction explainability, surfacing the exact factors driving each risk score.",
+      "Deployed a Flask + XGBoost inference API on Render with a React and Vite frontend on Vercel, returning a real-time Safe-to-Merge or Review-Recommended verdict.",
+      "Completed as a 2-credit Summer Research Project under Dr. Kumar Rajnish, Dept. of CSE, BIT Mesra.",
+    ],
+    href: "https://jit-bug-prediction.vercel.app",
+    logo: "",
+    image: projects.jit,
+    tags: [
+      {
+        id: 1,
+        name: "Python",
+        path: logos.python,
+      },
+      {
+        id: 2,
+        name: "Scikit-Learn",
+        path: logos.scikitlearn,
+      },
+      {
+        id: 3,
+        name: "Flask",
+        path: logos.flask,
+      },
+      {
+        id: 4,
+        name: "React",
+        path: logos.react,
+      },
+      {
+        id: 5,
+        name: "REST API",
+        path: logos.restAPI,
+      },
+      {
+        id: 6,
+        name: "Render",
+        path: logos.render,
+      },
+    ],
+  },
+  {
+    id: 2,
     title: "Imagica - AI Image Generator",
     description:
       "Imagica is a full-stack AI-powered platform that transforms text prompts into high-quality, stunning images in seconds. Built with React, Node.js, and MongoDB, it combines advanced deep learning models with a smooth, responsive frontend to deliver real-time visual creativity for designers, developers, and content creators.",
@@ -49,96 +98,6 @@ export const myProjects = [
         name: "Javascript",
         path: logos.javascript,
       },
-    ],
-  },
-  {
-    id: 2,
-    title: "FinGenius - AI Recommender for Smarter Investing",
-    description:
-      "FinGenius is a modern investing platform that empowers users with AI-driven recommendations, real-time portfolio insights, and seamless tracking. Built with React and Vite, the frontend delivers a fast, intuitive, and responsive interface that makes investing simple and engaging for modern investors.",
-    subDescription: [
-        "Developed a modern, responsive frontend for FinGenius using React and Vite, optimized for speed and scalability.",
-        "Designed an intuitive UI/UX with TailwindCSS and Framer Motion, ensuring smooth navigation and animations.",
-        "Implemented interactive dashboards for real-time portfolio tracking and investment insights.",
-        "Integrated API endpoints to display AI-powered recommendations and live market data seamlessly.",
-        "Created reusable and modular components to maintain consistency and support future scalability.",
-        "Focused on mobile-first design principles to deliver an engaging experience across all devices."
-
-    ],
-    href: "https://fingeniusfront.netlify.app/",
-    logo: "",
-    image: projects.fingenius,
-    tags: [
-      {
-        id: 1,
-        name: "React",
-        path: logos.react,
-      },
-      {
-        id: 2,
-        name: "Vite",
-        path: logos.vite,
-      },
-      {
-        id: 3,
-        name: "HTML",
-        path: logos.html,
-      },
-      {
-        id: 4,
-        name: "Figma",
-        path: logos.figma,
-      },
-      {
-        id: 5,
-        name: "TailwindCSS",
-        path: logos.tailwind,
-      }
-    ],
-  },
-  {
-    id: 3,
-    title: "My Portfolio - Full-Stack Developer Showcase",
-    description:
-      "A modern, responsive personal portfolio website showcasing projects, skills, and achievements. Built with React and TailwindCSS, it provides an interactive interface to explore projects, view detailed descriptions, and connect via social links, emphasizing clean design and smooth user experience.",
-    subDescription: [
-        "Designed and developed a responsive personal portfolio using React and TailwindCSS.",
-        "Showcased multiple projects with detailed descriptions, technologies used, and live demo links.",
-        "Implemented interactive UI components with smooth transitions and animations using Framer Motion.",
-        "Integrated a structured project section with modals and dynamic content for easy navigation.",
-        "Optimized for mobile-first design to ensure seamless experience across devices.",
-        "Focused on clean code structure and reusable components for maintainability and scalability."
-
-    ],
-    href: "",
-    logo: "",
-    image: projects.portfolio,
-    tags: [
-      {
-        id: 1,
-        name: "React",
-        path: logos.react,
-      },
-      {
-        id: 2,
-        name: "Vite",
-        path: logos.vite,
-      },
-      {
-        id: 3,
-        name: "HTML",
-        path: logos.html,
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: logos.tailwind,
-      },
-      {
-        id: 5,
-        name: "ThreeJS",
-        path: logos.threejs,
-      }
     ],
   },
 ];

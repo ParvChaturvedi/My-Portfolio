@@ -34,6 +34,9 @@ import googleCloud from './google-cloud.svg'
 import emailjs from './emailjs.svg'
 import aws from './aws.svg'
 import clipdrop from './clipdrop.svg'
+import python from './python.svg'
+import flask from './flask.svg'
+import scikitlearn from './scikitlearn.svg'
 
 export const logos ={
     express,
@@ -72,4 +75,7 @@ export const logos ={
     emailjs,
     clipdrop,
     aws,
+    python,
+    flask,
+    scikitlearn,
 }
